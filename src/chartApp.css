@@ -26,20 +26,27 @@ body {
   max-width: 80%;
   line-height: 1.4;
 }
+.rounded-lg {
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
 .user-message {
   background-color: #e1f5fe;
   align-self: flex-end;
-  margin-left: auto;
+  text-align: right;
 }
 .ai-message {
   background-color: #f1f1f1;
   align-self: flex-start;
+  white-space: break-spaces;
 }
 .input-area {
   display: flex;
   padding: 15px;
   border-top: 1px solid #ddd;
   background-color: white;
+  align-items: center;
 }
 #user-input {
   flex-grow: 1;
@@ -62,4 +69,9 @@ button:hover {
 .thinking {
   color: #888;
   font-style: italic;
+}
+
+.inputFlex {
+  display: flex;
+  flex: 1;
 }

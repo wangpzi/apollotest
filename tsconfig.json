@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2017",  // 可以根据需要调整为 "es5" 或 "es6"
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,7 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noImplicitAny": false,  // 如果您想临时减少类型检查严格性
+    "typeRoots": ["./node_modules/@types", "./src/types"]  // 指定类型定义位置
   },
   "include": [
     "src"
